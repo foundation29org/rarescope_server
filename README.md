@@ -2,14 +2,14 @@
 	<img align="right" width="100px" src="/img/logo.png">
 </div>			
 
-Dx29 server
+RareScope server
 ===============================================================================================================================
 
 [![Build status](https://f29.visualstudio.com/Raito/_apis/build/status/prod/Raito-server-prod)](https://f29.visualstudio.com/Raito/_build/latest?definitionId=114)   [![Deployment status](https://f29.vsrm.visualstudio.com/_apis/public/Release/badge/88bb841e-8756-480d-9840-a24ba6dd4cb4/14/15)](https://f29.visualstudio.com/Raito/_release?_a=releases&view=mine&definitionId=1)
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 #### 1. Overview 
-Collaborare
+RareScope
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
