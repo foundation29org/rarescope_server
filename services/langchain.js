@@ -32,26 +32,7 @@ function createModels(projectName) {
     callbacks: [tracer],
   });
   
-  const model32k = new ChatOpenAI({
-    modelName: "gpt-4-32k-0613",
-    azureOpenAIApiKey: AZURE_OPENAI_API_KEY,
-    azureOpenAIApiVersion: OPENAI_API_VERSION,
-    azureOpenAIApiInstanceName: OPENAI_API_BASE,
-    azureOpenAIApiDeploymentName: "test32k",
-    temperature: 0,
-    timeout: 500000,
-    callbacks: [tracer],
-  });
-
-  const model128k = new ChatOpenAI({
-    modelName: "gpt-4-1106-preview",
-    openAIApiKey: OPENAI_API_KEY,
-    temperature: 0,
-    timeout: 500000,
-    callbacks: [tracer],
-  });
-  
-  return { model, model32k, model128k };
+  return { model };
 }
 
 // This function will be a basic conversation with documents (context)
@@ -60,7 +41,7 @@ async function generate_items_for_disease(disease){
     try {
       // Create the models
       const projectName = `${config.LANGSMITH_PROJECT}`;
-      let { model, model32k, model128k } = createModels(projectName);
+      let { model} = createModels(projectName);
   
 
       const systemMessagePrompt = SystemMessagePromptTemplate.fromTemplate(
